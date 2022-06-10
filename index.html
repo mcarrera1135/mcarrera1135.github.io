@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- Icono de la pestaña web y Configuracionde Navegadores -->
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssembly</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+
+<body>
+    <!-- Introduccion index-->
+    <header class="site-header" >
+         <!-- Redes sociales-->
+        <div class="hero">
+            <div class="contenido-header ">
+                <nav class="redes-sociales">
+                    <a href="https://www.facebook.com/UniversidadTecnicadeAmbatoOficial/" target="_blank"><i class="fab fa-facebook-square"></i> </a>
+                    <a href="https://twitter.com/utecnicaambato?lang=es" target="_blank"><i class="fab fa-twitter-square"></i> </a>
+                    <a href="https://www.instagram.com/utecnicaambato/?hl=es-la" target="_blank"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://uta.edu.ec/v4.0/" target="_blank"><i class="fas fa-university"></i> </a>
+                </nav>
+                <!-- Encabezado Inicio-->
+                <div class="encabezado">
+                    <h2 class="titulo">
+                        Universidad Tècnica de Ambato
+                    </h2>
+                    <h3 class="facultad">
+                        <span>Facultad de Ingenierìa en Sistemas Electrònica e Industrial</span>
+                    </h3>
+                    <h4 class="carrera">
+                        <span>Ingenierìa en Telecomunicaciones</span>
+                    </h4>
+                </div>
+                <!-- Iconos de fecha y ubicacion-->
+                <div class="informacion">
+              
+                    <!-- Titulo Principal Grande-->
+                    <h1 class="nombre-del-sitio" > 
+                        Comunicaciones Avanzadas 
+                    </h1> 
+                   <!--  <p class="slogan">
+                        Recopilaciòn del módulo y contenido de <span>sexto Semestre</span>
+                    </p>-->
+                    <div class="slogan">
+                         <span></span>
+                    
+                    </div>
+                    
+                </div>  
+                 <!--menu de la pag-->
+                <div class="barra">
+                    <div class="contenedor clearfix">
+                        <div class="logo">
+                            <img src="img/contenido_2.png">
+                        </div>
+                        <div class="menu-movil">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="navegacion-principal">
+                            <a href="https://webassembly.org" target="_blank">Sitio WebAssembly</a>                      
+                            <a href="https://developer.mozilla.org/es/docs/WebAssembly" target="_blank">Mas informacion</a>
+                
+                        </nav>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Introduccion primer texto.separdor-->
+<div class="texto">
+    <h123>
+        <strong>
+            WebAssembly
+        </strong>
+    </h123>
+</div>
+
+<div class="significado">
+    <h123>
+            <p>WebAssembly (abreviado, Wasm) es una nueva forma con la que los desarrolladores web pueden generar aplicaciones en internet. Hasta ahora, para ello había que recurrir a JavaScript. Pero JavaScript es relativamente lento y, en determinados escenarios, se ve limitado. Por eso, el World Wide Web Consortium (W3C) ha impulsado este nuevo método. Sin embargo, para que Wasm pueda funcionar, el navegador debe ser compatible con este lenguaje. Por este motivo, Mozilla (Firefox), Microsoft (Edge), Apple (Safari) y Google (Chrome) han participado en el desarrollo. En todas las versiones de navegador actuales de estos proveedores se pueden ejecutar aplicaciones en WebAssembly.</p>
+    </h123>
+</div>
+
+<div class="ventajas">
+    <h123>
+        <strong>
+            Ventajas de WebAssembly
+        </strong>
+    </h123>
+</div>
+
+<div class="ventajas_texto">
+    <h123>
+        <ul>
+
+            <li> Estándar web abierto de W3C</li>
+            <li> Alto rendimiento y tamaños de archivo reducidos </li>
+            <li> Por lo tanto, también perfecto para la navegación móvil </li>
+            <li> En teoría, hace posible la realidad virtual en el navegador </li>
+            <li> No se requiere ningún lenguaje de programación nuevo </li>
+            <li> También se pueden utilizar C, C++ o Rust para la programación de aplicaciones web</li>
+            <li> Compatible con todos los grandes proveedores de navegadores </li>
+            <li> Sin limitaciones para el usuario </li>
+            
+            </ul>
+    </h123>
+</div>
+
+<div class="ventajas_imagen">
+    <img src="img/webimagen.jpg" width="500" height="300">
+</div>
+
+<div class="desventajas">
+    <h123>
+        <strong>
+            Desventajas de WebAssembly
+        </strong>
+    </h123>
+</div>
+
+<div class="desventajas_texto">
+    <h123>
+        <ul>
+
+            <li> WebAssembly presenta un único inconveniente: se difunde con mucha lentitud</li>
+            <li> No todos los navegadores están soportados. Al momento se soporta Safari, Edge, Chrome y Firefox, pero recuerda que hay navegadores incluso para la Nintendo DS </li>
+            <li> El proceso de compilación y ejecución es más lento, es decir, al programar llevas más tiempo porque primero debes compilar el archivo wasm y después llamarlo desde JavaScript. Imagina hacer eso en cada cambio que haces. </li>
+            </ul>
+    </h123>
+</div>
+
+<div class="enlapractica">
+    <h123>
+        <strong>
+            WebAssembly en la práctica  
+        </strong>
+    </h123>
+</div>
+
+<div class="enlapractica_texto">
+    <h1234>
+        <p>Hay dos variantes diferentes del código fuente: WebAssembly Text Format (WAT) y WebAssembly Binary Format (Wasm). Este último es el código real que la máquina ejecuta. Sin embargo, como está compuesto exclusivamente de código binario, no resulta útil para un análisis humano, motivo por el que existe el formato intermedio WAT. Como el código utiliza expresiones legibles, los propios programadores pueden analizarlo, si bien carece de la comodidad de trabajo que se conoce de los lenguajes de programación establecidos.
+        <p></p>
+            <b>
+            En este ejemplo se usa un código fuente muy simple en C:</b>
+        </p>
+    </h1234>
+</div>
+
+<div class="codigo_video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fkv6LmQPen4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="Repositorio">
+<a href="https://github.com/MatiasIac/YouTubeClass">Repositorio programa</a> 
+</div>
+</body>
+</html>

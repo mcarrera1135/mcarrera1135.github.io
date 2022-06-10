@@ -1,0 +1,496 @@
+/*Famila de Fuentes*/
+@font-face{
+    font-family: "Open Sans";
+    src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: "Oswald";
+    src:url(../fonts/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: "PT_Sans";
+    src:url(../fonts/PTSans-Regular.ttf);
+}
+/**configuraciones por defecto para navegadores**/
+html{
+    color:#222;
+    font-size: 1em;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{box-sizing: inherit;
+}
+::-moz-selection{
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection{
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+img,
+svg,
+video{
+    vertical-align: middle;
+}
+/*borde,ariba,abajo,letra principal grande CA*/
+fieldset{
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+/*ALINEACION PARA ABAJO EN VENTANA PEQUEÑA*/
+textarea{
+    resize: vertical;
+}
+/*actualizacion de mi navegador*/
+.browserupgrade{
+
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*Soluciona un roblema con la oppciond e float en superposiciones*/
+.clearfix:before,
+.clearfix:after{
+    content= "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+/**Color_Principal_Fondo y Letra a utlizar en el cuerpo de la pg**/
+body{
+    background-color:rgba(238, 225, 225, 0.8);
+    font-family: "Open Sans";
+}
+
+/**HEADER - Encabezado**/
+/*Imagen de fondo*/
+div.hero{
+    background-image:url(../img/fondo.jpg) ;
+    height: 90vh;  /*tamaño de imagen del encabezado*/
+    background-position: top center;
+    background-size: cover; /*ocpe toda la pantalla*/
+    margin-block-end: 50px;   
+}
+
+div.texto{
+    padding-top: 10px;
+    margin-left: 500px;
+    font-size: 60PX;
+}
+
+div.significado{
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    text-align: justify;
+}
+ /*Ventajas*/
+div.ventajas{
+    padding-top: 10px;
+    margin-left: 50px;
+
+    font-size: 20px;
+    text-align: left;
+}
+div.ventajas_texto{
+    padding-top: 10px;
+    margin-left: 50px;
+
+    font-size: 15px;
+    text-align: left;
+}
+div.ventajas_imagen{
+    padding-top: 10px;
+    margin-left: 750px;
+    margin-right: 100px;
+
+}
+ /*desVentajas*/
+
+div.desventajas{
+    padding-top: 10px;
+    margin-left: 50px;
+
+    font-size: 20px;
+    text-align: left;
+}
+div.desventajas_texto{
+    padding-top: 10px;
+    margin-left: 50px;
+
+    font-size: 15px;
+    text-align: left;
+}
+
+ /*En la practica */
+ div.enlapractica{
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+
+div.enlapractica_texto{
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+div.codigo_video{
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;s
+
+}
+
+div.Repositorio{
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;s
+
+}
+
+div.contenido-header{
+     /*Espaciado de la parte sueperior*/
+    padding-top: 10px;
+}
+/*Espaciado de la parte sueperior cuando sea pantalla grande*/
+@media only screen and (min-width: 768px){
+    div.contenido-header{
+        padding-top: 30px; 
+    }
+}
+nav.redes-sociales{
+    position:absolute;
+    text-align: center; /*Alineado de las redes sociales*/
+    margin-top: 50px;
+    margin-left: 500px;
+}
+nav.redes-sociales a {
+    position: relative;
+    color: rgb(0, 0, 0);   /*color de los iconos de redes sociales*/
+    font-size: 3em;
+    text-decoration: none;
+    margin-left: 20px;
+      
+}
+nav.redes-sociales a:last-child{
+    margin-right: 0px; /*Magen a la derecha de la redes sociles ultimo hijo */
+    
+}
+@media only screen and (min-width: 768px){
+    div.informacion{
+        width: 60%; /*Limitacion de la partes laterales del header*/
+        margin: 0 auto;
+        margin-top: 50px; /*Magen de infomacion entre iconos de rs-encabezado*/
+    }
+}
+div.informacion{
+    text-align: center ;/*alineado en el centro de la infromacion*/
+    color: rgb(255, 255, 255);
+    margin-top: 50px; 
+}
+div.informacion p {
+    margin: 0 ; /*Parrafo de fecha ubi*/
+    display: inline; /*Parrafo de fecha ubi en la misma linea*/
+    font-size: 20px;
+
+}
+div.informacion p i {
+    color: #fe4918 ;/*Iconos de fecha ubi*/
+    font-size: 1.5em;
+}
+p.fecha{
+    float: left;/*Ubicacion de fecha a la izquierda*/
+}
+p.ciudad{
+    float: right;/*Ubicacion de ciudad a la derecha*/
+    text-align: right;
+}
+div.slogan {
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    font-size: 1.8vw;
+    margin: -60px;
+    text-shadow: 4px 3px 3px #000;
+ 
+}
+
+div.slogan span{font-weight:bold;} /*ACTICAVIONDE CARACTER SPAN*/
+
+h1.nombre-del-sitio{
+    margin-top:100px;
+    font-family: "PT Sans"; /*Confg de letra del t p ca*/
+    font-size: 5vw;
+    text-transform: uppercase; /*Confg de letra del T a mayusculas*/ 
+    text-shadow: 4px 3px 3px #000;
+}
+/**Encabezado**/
+div.encabezado{
+    text-align: center ;
+    color: rgb(0, 0, 0);
+    margin-top: 113px;
+}
+/*CaRACTERIZACION del Encabezado uni,facul,carrera,olor,tipo,letra magen*/
+h2{
+    margin-top: 50px;
+    font-size: 2vw; 
+    font-family: "PT Sans"; 
+    margin: 20px;
+    
+    height: 1px;
+    border: 0;
+    color: rgb(255, 255, 255);
+
+    text-shadow: 4px 3px 3px #000;
+}
+h3{
+    font-size: 2vw; 
+    font-family: "PT Sans"; 
+    margin: 1;
+    padding: 1;
+    height: 1px;
+    border: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 3px #000;
+}
+h4{
+    font-size: 2vw; 
+    font-family: "PT Sans"; 
+    margin: 0;
+    padding: 2;
+    height: 1px;
+    border: 2;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 3px #000;
+}
+/*Barra*/
+div.barra{
+    background: linear-gradient(-135deg,
+                        rgb(93, 154, 233)0%,
+                        rgb(116, 149, 240)12%,
+                        rgb(61, 109, 241)25%,
+                        rgb(88, 161, 245)39%,
+                        rgb(67, 141, 253)50%,
+                        rgb(77, 131, 248)51%,
+                        rgb(42, 161, 241)60%,
+                        rgb(33, 169, 248)76%,
+                        rgb(20, 163, 245)91%,
+                        rgb(2, 66, 243)100%);
+    padding:30px 0px ; /*ARRIBA Y ABAJO ,IZQ-DER SEPARDOR*/
+    
+}
+
+.contenedor{ /*Conteneor para el texto Margenes izq-der*/
+    width:95%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .contenedor{
+        width:90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 992px){
+    .contenedor{
+        width:90%;
+        max-width: 1100px auto;
+    }
+}
+
+
+div.menu-movil:hover{/*cursor en lnk*/
+    cursor: pointer;
+}
+/*logo*/
+div.logo{
+    width: 80%;
+    float: left;
+}
+div.logo img{
+    width: 50%;
+}
+@media screen and (min-width: 768px){
+    div.logo{   /*logo configuracion pantalla grande*/
+        width: 40%;  
+        margin-top: -30px;
+        padding:3px 0 ;
+    } 
+}
+/**Navegacio principal**/
+nav.navegacion-principal {
+   display: none;
+}
+@media screen and (min-width: 768px){  /**pantalla grande Navegacio principal**/
+    nav.navegacion-principal{
+        width: 55%;
+        text-align: right;  
+        display: block;
+        line-height: 45px;
+        float: right;
+       
+      
+    }
+}
+/*Configuracion de efecto de menu*/
+nav.navegacion-principal a{
+    color: white;
+    font-family: "Oswald";
+    font-size: 1.2em;
+    text-decoration:none ;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 8px; 
+    position: relative;/*padre*/
+    transform: perspective(1px)translateZ(0);
+    box-shadow: 0px 0px 1px rgba(0, 0,0,0);  
+    transition: color 0.4s;
+    
+ }
+ nav.navegacion-principal a:before{
+     content: "";
+     position: absolute;  /*hijo*/
+     z-index: -1;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background: #1d1c1b; 
+     transform:scaleY(0) ;
+     transform-origin: 50%;
+     transition: transform .4s ease-out;
+
+ } 
+ nav.navegacion-principal a:hover,
+ nav.navegacion-principal a:last-child:hover{
+     color: white;
+}
+nav.navegacion-principal a:hover:before{
+    transform: scaleY(1);
+}
+nav.navegacion-principal a:last-child{
+    border:2px solid #0e0d0d;
+    color: #070707;
+}
+@media screen and (min-width: 768px){ /*Configuracion de efecto de menu-psntslls grsnde*/
+    nav.navegacion-principal{
+        width: 67%;
+        text-align: right;
+        display: block;
+        line-height: 45px;
+        float: right;
+        margin-top: -53px; /*movimiento de posicion de menu*/
+    } 
+    nav.navegacion-principal a{
+        padding: 10px 5px; /*cinfiguuracion de posicion de menu*/
+        display: inline;
+    }
+}
+/*Secciones texto*/
+.seccion{
+    position: relative;
+    padding: 0px 0;  
+}
+.seccion p  {
+    position: absolute;
+    margin: 0;
+    top:80px;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top:-20px  ;
+}
+
+h5{                         /*Secciones texto titulo*/
+    font-family: "Oswald";
+    font-size: 2.0em;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+/*PROGRAMAS*/
+section.programa{
+    position: relative;   
+}
+div.contenedor-video{
+    max-width: 100%;
+    top:0px;
+    padding:10px 20px ;
+    padding-top: 50px;/*dininir tamo de video*/
+    overflow-x: hidden;
+
+}
+div.contenido-programa{
+    position: absolute; /*contenido ensima del video */
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+/*COLOR DEL RECUADRO*/
+div.programa-evento{
+    background: rgba(238, 225, 225, 0.8);
+    padding: 15px;
+    margin-top: 80px;/*seprarcion de la parte de arriba cuadro blanco*/
+    
+}
+
+/*posicionamiento y detalles del la tera indice h6*/
+h6{                         /*Secciones texto titulo*/
+    font-family: "Oswald";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
+h6::after{
+    content: "";
+   background-image: url(../img/separador2.png);
+    height:25px; /*Alto*/
+    width: 550px; /*ancho*/
+    display: block;
+    margin:  0 auto ;
+}
+
+
+/*sepsrscion psrs table en ventana */
+@media screen and (min-width: 768px){
+    div.programa-evento{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 992px){
+    div.programa-evento{
+        width: 50%;
+    }
+}
+
+
+/*fin del indice*/
+
+
+
